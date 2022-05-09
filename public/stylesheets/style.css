@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+* {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.6rem;
+}
+
+header {
+    background:rgb(26,26,26);
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.473);
+}
+
+.second-header {
+    position: fixed;
+    opacity: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    clear: both;
+    transition: 0.1s;
+}
+
+.sticky {
+    opacity: 1;
+}
+
+.second-header > h1 {
+    font-size: 3.2rem;
+    float: left;
+    margin: 20px 40px;
+}
+
+.second-header > nav {
+    float: right;
+    margin: 30px 15px 15px 15px;
+}
+
+.second-header > nav > ul {
+    list-style: none;
+}
+
+.second-header > nav > ul > li{
+    display: inline-block;
+    padding: 0px 2rem 2rem 2rem;
+    border-bottom: 2px solid white;
+}
+
+.second-header > nav > ul > li:hover {
+    border-bottom: 2px solid #1a1a1a;
+}
+
+.second-header > nav > ul > li > a{
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+header .site-title {
+    font-size: 3.2rem;
+    color: white;
+    margin: 40px;
+    clear: both;
+}
+
+header > .cta-container {
+    width: 100%;
+    display: flex;
+}
+
+.big-text {
+    padding: 12rem 0 0 12rem;
+    color: white;
+    width: 50%;
+    font-size: 8rem;
+}
+
+header .cta {
+    text-align: justify;
+    width: 20%;
+    font-weight: bold;
+    color: white;
+    margin: 12rem;
+    padding: 3rem;
+}
+
+.cta .button {
+    margin: auto;
+    margin-top: 3rem;
+    width: 20rem;
+    height: 6rem;
+    text-align: center;
+    line-height: 6rem;
+    background-color: rgb(156, 42, 156);
+}
+
+.cta .button:hover {
+    background-color: rgb(136, 38, 136);
+}
+
+.cta > .button > a {
+    color: white;
+    text-decoration: none;
+}
+
+header > #imgs {
+    padding: 5rem;
+    text-align: center;
+    clear: both;
+}
+
+main {
+    margin: 0 auto;
+    flex-grow: 1;
+    width: 100%;
+}
+
+main .big-text {
+    color: #1a1a1a;
+}
+
+main > section {
+    padding-bottom: 12rem;
+}
+
+section .content {
+    width: 40%;
+    text-align: justify;
+    margin-left: 12rem;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+}
+
+.objetivos {
+    background: radial-gradient(farthest-corner at 0px 0px, rgb(38,38,38), rgb(34,34,34), rgb(30,30,30), rgb(26,26,26) 40%);
+    color: white;
+    overflow: hidden;
+}
+
+.objetivos > .content {
+    width: 100%;
+}
+
+.objetivos > .big-text {
+    color: white;
+    margin-bottom: 5rem;
+}
+
+.objetivos > .content > .func { 
+    width: 100%;
+    padding: 3rem 0;
+    clear: both;
+    display: flex;
+}
+
+.objetivos > .content h2 {
+    font-size: 5rem;
+}
+
+.func > .func-desc {
+    font-size: 2.5rem;
+    width: 50%;
+    padding-right: 5rem;
+}
+
+.func > img {
+    width: 500px;
+    height: 500px;
+}
+
+
+footer {
+    padding: 3rem 0;
+    background-color: rgb(156, 42, 156);
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+footer > p {
+    color: white;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+footer > a {
+    font-weight: lighter;
+    color: white;
+    padding: 1rem;
+}
+
+/* TABELA */
+table{
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-top: none;
+    padding: 20px;
+}
+
+caption {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th, td{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* media queries */
+@media (max-width: 1259px) {
+    html {
+        font-size: 40%;
+    }
+    header #imgs {
+        padding: 3em 0;
+    }
+
+    .cta-container {
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-container > h1 {
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-container > .cta {
+        width: 50%;
+        margin: auto;
+    }
+
+    .big-text {
+        padding-left: 0;
+        width: auto;
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    section > .content {
+        margin: auto;
+        padding: 0 2rem;
+        text-align: center;
+        width: auto;
+    }
+
+    .func > .func-desc{
+        margin: auto;
+    }
+    
+    .objetivos > .content h2 {
+        width: auto;
+        font-size: 4rem;
+    }
+
+    .objetivos > .content {
+        padding: 0;
+        margin: auto;
+    }
+
+    .objetivos > .content > .func {
+        width: 100%;
+        flex-direction: column;
+        width: auto;
+        padding: 3rem 0;
+        clear: both;
+    }
+
+    .objetivos > .content > .func > .func-desc {
+        width: auto;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .func > img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+}

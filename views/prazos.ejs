@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cronograma</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <style>
+            .second-header {
+                position: inherit;
+                opacity: 1;
+                background-color: #1a1a1a;
+                color: white;
+            }
+
+            .second-header > nav > ul > li {
+                border-bottom: 2px solid #1a1a1a;
+            }
+
+            .second-header > nav > ul > li:hover {
+                border-bottom: 2px solid white;
+            }
+
+            .second-header > nav > ul > li > a {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <%- include('partials/header'); %>
+        <main>
+            <table>
+                <caption>Cronograma do projeto</caption>
+                <thead>
+                    <tr>
+                        <th>Linguagens</th>
+                        <th>Elementos</th>
+                        <th>Duração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">HTML</th>
+                        <td>Estrutura do site</td>
+                        <td>3 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Acessibilidade</td>
+                        <td>1 semana</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">CSS</th>
+                        <td>Estilo geral</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <td>Responsividade</td>
+                        <td>2 semanas</td>
+                    </tr>
+                    <tr>
+                        <th>Javascript</th>
+                        <td colspan="2">4 semanas</td>
+                    </tr>
+                    <tr>
+                        <th>Banco de dados</th>
+                        <td colspan="2">4 semanas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <%- include('partials/footer'); %>    
+    </body>
+</html>

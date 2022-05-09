@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    <header>
+        <%- include('partials/header'); %>
+
+        <h1 class="site-title">Chromatiz</h1>
+
+        <div class="cta-container">
+            <h1 class="big-text">Crie paletas de cores para seus sites de forma prática.</h1>
+
+            <div class="cta">
+                <p>É webdesigner ou desenvolvedor e deseja usar a ferramenta para montar paletas de cores para seus projetos?</p>
+                <div class="button">
+                    <a href="exp">Experimente!</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="imgs">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/img1-p.png">
+                <img src="images/img1.png" alt="Imagem demonstrando a estrutura do projeto">
+            </picture>
+        </div>
+    </header>
+    <main>
+      <section class="introducao">
+        <h1 class="big-text">O que é chromatiz?</h1>
+        <div class="content">
+            <p>
+                O tema principal escolhido para o projeto foi <strong>Design</strong>, chromatiz se trata de um
+                site/web app
+                com ferramentas que montem paletas de cores personalizadas com base nos fundamentos do círculo
+                cromático. O
+                objetivo do site é auxiliar desenvolvedores/web designers a montar paleta de cores para os seus
+                projetos, com
+                ferramentas que além de permitir o usuário construir uma paleta harmônica, também permita
+                pré-visualizar uma
+                simulação de como ela será aplicada em uma interface de exemplo.
+            </p>
+        </div>
+      </section>
+
+      <section class="justificativa">
+        <h1 class="big-text">Por que chromatiz foi criado?</h1>
+        <div class="content">
+            <p>
+                Há poucas ferramentas de design com montagem de paletas que auxiliem especificamente os
+                desenvolvedores web,
+                as poucas que existem(como o Paletton anteriormente citado) não estão 100% funcionais, não são
+                acessíveis
+                para a maioria dos dipositivos e não são acessíveis para vários idiomas. O projeto a ser
+                desenvolvido nessa
+                disciplina é uma boa solução para essa situação e poderá atingir um público muito amplo de
+                desenvolvedores
+                de diversas plataformas, com os desenvolvedores web incluidos.
+            </p>
+        </div>
+      </section>
+
+      <section class="objetivos">
+        <h1 class="big-text">Objetivos e Funcionalidades</h1>
+
+        <div class="content">
+            <h2>Circulo Cromático Interativo</h2>
+            <div class="func">
+                <div class="func-desc">
+                    <p>
+                      Circulo cromático que permite construir paletas baseada na teoria da harmonia das cores de
+                      forma automática.
+                    </p>
+                </div>
+                <img src="images/palletes2.svg" alt="Mulher selecionando cores">
+            </div>
+
+            <h2>Paletas Personalizadas</h2>
+            <div class="func">
+                <div class="func-desc">
+                    <p>O usuário poderá criar uma conta e salvar/gerenciar suas próprias paletas, que serão
+                        disponibilizadas em Cod. Hexadecimal, RGB, HSL.</p>
+                </div>
+                <img src="images/palletes.svg" alt="Homem gerenciando uma paleta de cores">
+            </div>
+
+            <h2>Pré-visualização das paletas</h2>
+            <div class="func">
+                <div class="func-desc">
+                    <p>O site disponibilizará um preview com sua paleta personalizada aplicada em uma interface de
+                        exemplo.</p>
+                </div>
+                <img src="images/addcolor.svg" alt="Mulher aplicando cor em um site">
+            </div>
+        </div>
+      </section>
+    </main>
+    
+    <%- include('partials/footer'); %>
+  </body>
+</html>
